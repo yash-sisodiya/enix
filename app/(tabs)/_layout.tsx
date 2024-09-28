@@ -1,7 +1,7 @@
 import { Tabs, useLocalSearchParams } from 'expo-router';
 import React from 'react';
 
-import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome, MaterialIcons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   const path = useLocalSearchParams();
@@ -11,10 +11,10 @@ export default function TabLayout() {
       initialRouteName="profile"
       screenOptions={{
         tabBarInactiveTintColor: 'black',
-        tabBarActiveTintColor: 'red',
-        tabBarStyle: { padding: 8, height: 55, paddingBottom: 8 },
+        tabBarActiveTintColor: '#2EBFA5',
+        tabBarStyle: { padding: 8, height: 65, paddingBottom: 8 },
         tabBarLabelStyle: {
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: '500',
         },
       }}
@@ -26,10 +26,10 @@ export default function TabLayout() {
           title: 'Profile',
           tabBarIcon: ({ color, focused }) => {
             return (
-              <FontAwesome5
+              <FontAwesome
                 name="user"
-                color={!focused ? 'black' : 'red'}
-                size={18}
+                color={!focused ? 'black' : '#2EBFA5'}
+                size={24}
               />
             );
           },
@@ -41,13 +41,13 @@ export default function TabLayout() {
         name="contact"
         initialParams={path}
         options={{
-          title: 'Contact',
+          title: 'Contact Details',
           tabBarIcon: ({ color, focused }) => {
             return (
-              <FontAwesome5
-                name="user"
-                color={!focused ? 'black' : 'red'}
-                size={18}
+              <MaterialIcons
+                name="contact-page"
+                color={!focused ? 'black' : '#2EBFA5'}
+                size={24}
               />
             );
           },
