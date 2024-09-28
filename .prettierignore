@@ -1,0 +1,6 @@
+# .prettierignore
+
+# Ignore expo-env.d.ts file
+expo-env.d.ts
+.husky
+metro.config.js

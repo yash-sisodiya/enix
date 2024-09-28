@@ -1,0 +1,55 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './app/_layout.{js,jsx,ts,tsx}',
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'blue-to-navy-gradient': 'var(--color-gradient)',
+      },
+      colors: {
+        primary: {
+          DEFAULT: 'var(--color-primary-default)',
+          blue: 'var(--color-primary-blue)',
+          blue2: 'var(--color-primary-blue2)',
+          blue2_30: 'var(--color-primary-blue2_30)',
+          blue2_50: 'var(--color-primary-blue2_50)',
+          lightBlue: 'var(--color-primary-light-blue)',
+          lightBlue2: 'var(--color-primary-light-blue2)',
+          azureBlue: 'var(--color-primary-azure-blue)',
+          azureDark: 'var(--color-primary-azure-dark)',
+          midnightBlue: 'var(--color-primary-midnight-blue)',
+          black: 'var(--color-primary-black)',
+          white: 'var(--color-primary-white)',
+          100: 'var(--color-primary-100)',
+          coolGray: 'var(--color-primary-cool-gray)',
+          warning: 'var(--color-secondary-warning)',
+          error: 'var(--color-secondary-error)',
+          success: 'var(--color-secondary-success)',
+        },
+        secondary: {
+          gray: 'var(--color-secondary-gray)',
+          lightGray: 'var(--color-secondary-light-gray)',
+          lightGray2: 'var(--color-secondary-light-gray2)',
+          gray3: 'var(--color-secondary-gray3)',
+          red: 'var(--color-secondary-red)',
+          green: 'var(--color-secondary-green)',
+          lightGreen: 'var(--color-secondary-light-green)',
+          disable: 'var(--color-secondary-disable)',
+          skyMist: 'var(--color-secondary-sky-mist)',
+          cloudGray: 'var(--color-secondary-cloud-gray)',
+          steelGray: 'var(--color-primary-steel-gray)',
+          paleGray: 'var(--color-primary-pale-gray)',
+          ashGray: 'var(--color-secondary-ash-gray)',
+          susetYellow: 'var(--color-secondary-sunset-yellow)',
+          skyBlue: 'var(--color-secondary-sky-blue)',
+          violet: 'var(--color-secondary-violet)',
+        },
+      },
+    },
+  },
+  plugins: [],
+};
