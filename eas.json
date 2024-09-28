@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 9.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_PROJECT_ID": "ba5bba35-fe88-4aeb-b0f1-496e9df476e0"
+      }
+    },
+    "preview": {
+      "android": { "buildType": "apk" },
+      "ios": {
+        "simulator": true
+      },
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_PROJECT_ID": "ba5bba35-fe88-4aeb-b0f1-496e9df476e0"
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
