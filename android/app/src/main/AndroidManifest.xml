@@ -26,10 +26,6 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="myapp"/>
-        <data android:scheme="com.rejolut.tagocash"/>
-        <data android:scheme="com.tagocash"/>
-        <data android:scheme="tagocash"/>
         <data android:scheme="enix"/>
         <data android:scheme="com.enix"/>
       </intent-filter>
