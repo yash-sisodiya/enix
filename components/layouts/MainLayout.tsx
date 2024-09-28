@@ -3,15 +3,18 @@ import { router } from 'expo-router';
 import React, { ReactNode } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { AnimatedBorderLoader } from '../Molecules/AnimatedBorderLoader';
 
 const MainLayout = ({
   children,
   isBack,
   title,
+  loading = false,
 }: {
   children: ReactNode;
   isBack?: boolean;
   title?: string;
+  loading?: boolean;
 }) => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#FDFDFD' }}>
@@ -37,6 +40,7 @@ const MainLayout = ({
             <View className="absolute right-0 h-3 w-3 rounded-full bg-secondary-red" />
           </TouchableOpacity>
         </View>
+        <AnimatedBorderLoader isLoading={loading} />
         <View className="mt-2 flex-1">{children}</View>
       </View>
     </SafeAreaView>
