@@ -1,4 +1,4 @@
-import { SplashScreen, useRootNavigationState } from 'expo-router';
+import { useRootNavigationState } from 'expo-router';
 import { Fragment, ReactNode, useEffect } from 'react';
 
 const AppProvider = ({ children }: { children: ReactNode }) => {
@@ -6,7 +6,6 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (!key) return;
-    SplashScreen.hideAsync();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
 

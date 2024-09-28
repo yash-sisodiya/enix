@@ -67,7 +67,10 @@ export default function HomeScreen() {
               </View>
               {basicDetails &&
                 basicDetails.map(item => (
-                  <View style={styles.infoContainer}>
+                  <View
+                    style={styles.infoContainer}
+                    key={`${item?.label}-profile`}
+                  >
                     <Text style={styles.infoLabel}>{item?.label}:</Text>
                     <Text style={styles.infoValue}>{item?.value}</Text>
                   </View>

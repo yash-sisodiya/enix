@@ -67,7 +67,7 @@ export default function ContactDetails() {
               </View>
               {basicDetails &&
                 basicDetails.map(item => (
-                  <View style={styles.infoContainer}>
+                  <View style={styles.infoContainer} key={item?.label}>
                     <Text style={styles.infoLabel}>{item?.label}:</Text>
                     <Text style={styles.infoValue}>{item?.value}</Text>
                   </View>
