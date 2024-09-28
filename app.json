@@ -4,15 +4,15 @@
     "slug": "enix",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/adaptive-icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "enix",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/adaptive-icon.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": ["*/"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.enix"
